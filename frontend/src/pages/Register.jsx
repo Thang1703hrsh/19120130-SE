@@ -23,11 +23,11 @@ function Register()
         (state) => state.auth)
     useEffect(() => {
         if (isError) {
-          toast.error(message)
+            toast.error(message)
         }
     
         if (isSuccess || user) {
-          navigate('/')
+            navigate('/')
         }
     
         dispatch(reset())
@@ -59,7 +59,7 @@ function Register()
         return <Spinner />
     }
 
-    return( 
+    return ( 
         <>
             <section className='heading'>
                 <h1>
@@ -113,7 +113,9 @@ function Register()
                         />
                     </div>
                     <div className="form-group">
-                        <button type="submit" className='btn btn-block'>Submit</button>
+                        <button type="submit" className='btn btn-block'>
+                            Submit
+                        </button>
                     </div>
                 </form>
             </section>
